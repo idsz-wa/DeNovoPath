@@ -206,7 +206,7 @@ For public releases, deposit large datasets in an appropriate data repository an
 
 ## License
 
-Add a license before public release. Common choices for academic software include MIT, BSD-3-Clause and Apache-2.0.
+MIT license 
 
 ## Citation
 
