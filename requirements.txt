@@ -1,0 +1,3 @@
+pyfaidx>=0.8
+PyYAML>=6.0
+

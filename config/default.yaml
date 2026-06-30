@@ -1,0 +1,48 @@
+# DeNovoPath default scoring configuration.
+# These defaults define the current deterministic scoring behavior.
+
+score_weights:
+  impact: 0.42
+  protein: 0.28
+  splice: 0.15
+  sequence: 0.10
+
+cohort_weights:
+  single_sample: 0.02
+  small_cohort: 0.05
+  large_cohort: 0.12
+
+level_thresholds:
+  high: 0.80
+  moderate: 0.50
+  low: 0.20
+
+confidence_weights:
+  qc: 0.70
+  score_separation: 0.30
+
+protein_weights:
+  physchem: 0.50
+  grantham: 0.25
+  blosum: 0.25
+  codon_usage: 0.10
+  protein_context: 0.10
+  protein_structure: 0.12
+  protein_structure_model: 0.15
+  protein_esm: 0.15
+  protein_lm: 0.10
+  protein_domain: 0.12
+
+sequence_weights:
+  context: 0.50
+  kmer: 0.20
+  repeat: 0.15
+  mutctx: 0.15
+  dna_lm: 0.15
+
+max_signal_weight: 0.55
+weighted_signal_weight: 0.45
+
+# How to choose among multiple transcript annotations for the same ALT.
+# Options: score, longest_cds, longest_transcript, first.
+transcript_priority: score

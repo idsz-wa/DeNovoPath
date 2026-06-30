@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "denovopath"
+version = "0.1.0"
+description = "Reference-local VCF annotation and variant prioritization for non-model species"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pyfaidx>=0.8",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+ml = ["scikit-learn>=1.0"]
+dev = ["scikit-learn>=1.0"]
+
+[project.scripts]
+denovopath = "denovopath.cli:main"
+denovopath-parallel = "scripts.score_vcf_parallel:main"
+
+[tool.setuptools]
+packages = ["denovopath", "scripts"]
+
+[tool.setuptools.package-dir]
+denovopath = "src/denovopath"
+scripts = "scripts"

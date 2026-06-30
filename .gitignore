@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local environments
+.venv/
+venv/
+env/
+.conda/
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Large local data and generated outputs
+data/
+results/
+tmp/
+*.vcf
+*.vcf.gz
+*.bcf
+*.fa
+*.fasta
+*.fna
+*.gff
+*.gff3
+*.gtf
+*.bam
+*.cram
+*.sam
+*.csi
+*.tbi
+*.fai
+
+# Generated reports
+*.report.html
+*.summary.json
